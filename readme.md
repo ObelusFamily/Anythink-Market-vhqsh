@@ -10,4 +10,10 @@ When implementing a new feature or fixing a bug, please create a new pull reques
 
 ## First setup
 
-**[TODO 05/01/2018 @vanessa-cooper]:** _It's been a while since anyone ran a fresh copy of this repo. I think it's worth documenting the steps needed to install and run the repo on a new machine?_
+1. Install [install Docker](https://docs.docker.com/get-docker/).
+2. Clone frontend and backend repositories ([frontend](frontend/readme.md) and [backend](backend/README.md)).
+3. Verify docker is ready by running the following commands in your terminal: `docker -v` and `docker-compose -v`.
+4. Run docker-compose up from the project root directory to load backend and frontend.
+5. If docker is working correctly, the backend should be running and able to connect to your local database. Test this by pointing your browser to `http://localhost:3000/api/ping`
+6. Frontend should load automatically with the address of `http://localhost:3001/`
+7. Good luck!
